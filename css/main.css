@@ -80,7 +80,7 @@ h2 {
 }
 
 .social-icons a {
-  font-size: 18px;
+  font-size: 30px;
   color: #fff;
   padding-left:20px;
 }
@@ -254,7 +254,7 @@ h2 {
 **************************/
 
 #explore {
-  background-color: #C34C39;
+  background-color: #ffffff;
   background-image: url("../images/event-bg.jpg");
   background-position: center bottom;
   background-size: contain;
@@ -292,6 +292,10 @@ h2 {
   font-size: 18px;
   position: relative;
 }
+#countdown p{
+color: #2b3e51;
+}
+
 
 #countdown li:last-child {
   margin-right: 0
@@ -305,32 +309,32 @@ h2 {
   line-height: 79px;
   width: 75px;
   border-radius: 10px;
-  border-right: 1px solid #9e3e2e;
-  border-bottom: 1px solid #9e3e2e;
+  border-right: 1px solid #2b3e51;
+  border-bottom: 1px solid #2b3e51;
 }
 
 #countdown li .days {
-  background-color: #45b29d;
-  border-top: 1px solid #6ac1b1;
-  border-left: 1px solid #6ac1b1;
+  background-color: #2b3e51;
+  border-top: 1px solid #2b3e51;
+  border-left: 1px solid #2b3e51;
 }
 
 #countdown li .hours {
-  background-color: #efc94c;
-  border-top: 1px solid #f2d470;
-  border-left: 1px solid #f2d470;
+  background-color: #2b3e51;
+  border-top: 1px solid #2b3e51;
+  border-left: 1px solid #2b3e51;
 }
 
 #countdown li .minutes {
-  background-color: #e27a3f;
-  border-top: 1px solid #e89565;
-  border-left: 1px solid #e89565;
+  background-color: #2b3e51;
+  border-top: 1px solid #2b3e51;
+  border-left: 1px solid #2b3e51;
 }
 
 #countdown li .seconds {
-  background-color: #df5a49;
-  border-top: 1px solid #e57b6d;
-  border-left: 1px solid #e57b6d;
+  background-color: #2b3e51;
+  border-top: 1px solid #2b3e51;
+  border-left: 1px solid #2b3e51;
 }
 
 #countdown li:before {
@@ -354,7 +358,7 @@ h2 {
 }
 
 .cart {
-  background-color: #b34534;
+  background-color: #2b3e51;
   position: absolute;
   right:-200px;
   top: 37%;
@@ -381,7 +385,7 @@ h2 {
 .cart a i {
   font-size: 30px;
   padding: 20px 12px;
-  background-color: #A64030;
+  background-color: #2b3e51;
   margin-right: 3px;
 }
 
@@ -496,7 +500,7 @@ h2 {
 }
 
 #about .btn-primary {
-  background-color: #137c61;
+  background-color: #0b5d70;
   color: #fff;
   text-transform: capitalize;
   border: none;
@@ -504,10 +508,8 @@ h2 {
 }
 
 #about .btn-primary:hover {
-  background-color: #126d55
+  background-color: #0f7286
 }
-
-
 
 /*************************
 ******Twitter CSS****
