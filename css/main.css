@@ -9,7 +9,6 @@
 body {
   font-family: 'Dosis', sans-serif;
   font-size: 17px;
-  color: #fff
 }
 
 
@@ -173,6 +172,26 @@ h2 {
 
 
 /*************************
+*******Hover******
+**************************/
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+/*************************
 *******Home CSS******
 **************************/
 
@@ -254,26 +273,24 @@ h2 {
 **************************/
 
 #explore {
-  background-color: #ffffff;
-  background-image: url("../images/event-bg.jpg");
+  background-color: #000000;
   background-position: center bottom;
   background-size: contain;
   background-repeat:no-repeat;
   position: relative;
   overflow: hidden;
-  padding: 130px 0 100px;
+  padding: 10px 0    10px;
+  z-index: 2;
 }
 
-.watch {
-  position: absolute;
-  left: 0;
-  top: 7%;
-}
+
 
 #explore h2 {
   font-size: 42px;
   text-transform: uppercase;
   text-align: center;
+  color: #ffffff;
+  z-index: 100    ;
 }
 
 #countdown {
@@ -281,6 +298,8 @@ h2 {
   overflow: hidden;
   text-align: center;
   padding: 0
+  z-index: 2;
+
 }
 
 #countdown li {
@@ -293,7 +312,7 @@ h2 {
   position: relative;
 }
 #countdown p{
-color: #2b3e51;
+color: #1B7B98;
 }
 
 
@@ -307,34 +326,35 @@ color: #2b3e51;
   font-weight: 700;
   height: 82px;
   line-height: 79px;
+  color: #ffffff;
   width: 75px;
   border-radius: 10px;
-  border-right: 1px solid #2b3e51;
-  border-bottom: 1px solid #2b3e51;
+  border-right: 1px solid #1B7B98;
+  border-bottom: 1px solid #1B7B98;
 }
 
 #countdown li .days {
-  background-color: #2b3e51;
-  border-top: 1px solid #2b3e51;
-  border-left: 1px solid #2b3e51;
+  background-color: #1B7B98;
+  border-top: 1px solid #1B7B98;
+  border-left: 1px solid #1B7B98;
 }
 
 #countdown li .hours {
-  background-color: #2b3e51;
-  border-top: 1px solid #2b3e51;
-  border-left: 1px solid #2b3e51;
+  background-color: #1B7B98;
+  border-top: 1px solid #1B7B98;
+  border-left: 1px solid #1B7B98;
 }
 
 #countdown li .minutes {
-  background-color: #2b3e51;
-  border-top: 1px solid #2b3e51;
-  border-left: 1px solid #2b3e51;
+  background-color: #1B7B98;
+  border-top: 1px solid #1B7B98;
+  border-left: 1px solid #1B7B98;
 }
 
 #countdown li .seconds {
-  background-color: #2b3e51;
-  border-top: 1px solid #2b3e51;
-  border-left: 1px solid #2b3e51;
+  background-color: #1B7B98;
+  border-top: 1px solid #1B7B98;
+  border-left: 1px solid #1B7B98;
 }
 
 #countdown li:before {
@@ -357,37 +377,7 @@ color: #2b3e51;
   width: 1px;
 }
 
-.cart {
-  background-color: #2b3e51;
-  position: absolute;
-  right:-200px;
-  top: 37%;
-  width:252px;
-   -webkit-transition: all 0.7s ease-in-out;
-  -moz-transition: all 0.7s ease-in-out;
-  -ms-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
-}
 
-.cart:hover {
-  right:0;
-}
-
-
-.cart a {
-  color: #FFFFFF;
-  display: block;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-.cart a i {
-  font-size: 30px;
-  padding: 20px 12px;
-  background-color: #2b3e51;
-  margin-right: 3px;
-}
 
 
 
@@ -465,7 +455,7 @@ color: #2b3e51;
 **************************/
 
 #about {
-  background-color: #47a2b4;
+    background-color: #000000;
   position: relative;
   width: 100%;
   display: flex;
@@ -482,8 +472,9 @@ color: #2b3e51;
 
 .about-content {
   width: 50%;
-   background-image: url("../images/about-bg.jpg");
+  background-color: #000000;
   background-position: left bottom;
+  color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 70px 70px 110px;
