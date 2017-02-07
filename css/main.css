@@ -82,6 +82,8 @@ h2 {
   font-size: 30px;
   color: #fff;
   padding-left:20px;
+  position: relative;
+  z-index: 30;
 }
 
 .social-icons .fa-facebook:hover {
@@ -191,6 +193,76 @@ h2 {
     transform: scale(1.1);
 }
 
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+
+
+
+
 /*************************
 *******Home CSS******
 **************************/
@@ -279,7 +351,7 @@ h2 {
   background-repeat:no-repeat;
   position: relative;
   overflow: hidden;
-  padding: 10px 0    10px;
+  padding: 50px 0    50px;
   z-index: 2;
 }
 
@@ -290,7 +362,6 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-  z-index: 100    ;
 }
 
 #countdown {
@@ -331,27 +402,41 @@ color: #1B7B98;
   border-radius: 10px;
   border-right: 1px solid #1B7B98;
   border-bottom: 1px solid #1B7B98;
+  z-index: 30;
+position: relative;
 }
 
 #countdown li .days {
+  position: relative;
+  z-index: 23;
+
   background-color: #1B7B98;
   border-top: 1px solid #1B7B98;
   border-left: 1px solid #1B7B98;
 }
 
 #countdown li .hours {
+  position: relative;
+  z-index: 30;
+
   background-color: #1B7B98;
   border-top: 1px solid #1B7B98;
   border-left: 1px solid #1B7B98;
 }
 
 #countdown li .minutes {
+  position: relative;
+
   background-color: #1B7B98;
   border-top: 1px solid #1B7B98;
   border-left: 1px solid #1B7B98;
+  z-index: 30;
+
 }
 
 #countdown li .seconds {
+  position: relative;
+  z-index: 30;
   background-color: #1B7B98;
   border-top: 1px solid #1B7B98;
   border-left: 1px solid #1B7B98;
@@ -385,8 +470,7 @@ color: #1B7B98;
 *******Event CSS******
 **************************/
 #event {
-  background-color: #33888F;
-  background-image: url("../images/performar-bg.jpg");
+  background-color: #000000;
   background-position: 50% 0;
   background-size: contain;
   position: relative;
@@ -459,15 +543,19 @@ color: #1B7B98;
   position: relative;
   width: 100%;
   display: flex;
+
 }
 
 .guitar2 {
   top: 0;
   width: 50%;
+
 }
 
 .guitar2 img {
+  position: relative;
   padding-top: 3%;
+  z-index: 10;
 }
 
 .about-content {
@@ -483,89 +571,27 @@ color: #1B7B98;
 
 #about h2 {
   margin-bottom: 23px;
+    z-index: 30;
 }
 
 .about-content p {
   font-size: 17px;
   font-family: 'Dosis',sans-serif;
+    z-index: 30;
 }
 
 #about .btn-primary {
   background-color: #0b5d70;
   color: #fff;
+  position: relative;
   text-transform: capitalize;
   border: none;
   margin-top: 28px;
+  z-index: 30;
 }
 
 #about .btn-primary:hover {
   background-color: #0f7286
-}
-
-/*************************
-******Twitter CSS****
-**************************/
-
-#twitter {
-  background-color: #ecedef;
-  background-image: url("../images/twitter-bg.jpg");
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat:no-repeat;
-  position: relative;
-  padding: 95px 0 90px;
-  overflow: hidden;
-}
-
-.twit {
-  position: absolute;
-  left: 0;
-  top:-42%;
-}
-
-#twitter-feed .item {
-  text-align: center;
-}
-
-#twitter-feed .item img {
-  display: inline-block;
-  width: 78px;
-  height: 78px;
-  border-radius: 50%;
-  background-color: #c5c8ce;
-  padding: 5px;
-  margin-bottom: 30px;
-}
-
-#twitter-feed .item a,
-#twitter-feed .item p {
-  font-size: 24px;
-  font-weight: 300;
-  font-family: 'Yanone Kaffeesatz','sans-serif';
-}
-
-#twitter-feed .item p {
-  color: #3D3D3D;
-}
-
-#twitter-feed .item a {
-  color:#00c3ff;
-}
-
-.twitter-control-left,
-.twitter-control-right {
-  position: absolute;
-  color: #00c3ff;
-  top: 59%;
-  font-size: 24px
-}
-
-.twitter-control-left {
-  left: 0;
-}
-
-.twitter-control-right {
-  right:0;
 }
 
 
@@ -575,8 +601,7 @@ color: #1B7B98;
 **************************/
 
 #sponsor {
-  background-color: #1881a2;
-  background-image: url("../images/sponsor-bg.jpg");
+  background-color: #000000;
   background-position:50% 0;
   background-size: cover;
   background-repeat:no-repeat;
@@ -596,6 +621,7 @@ color: #1B7B98;
 #sponsor h2 {
   margin-top: 90px;
   margin-bottom: 40px;
+  color: #ffffff;
 }
 
 #sponsor .item ul {
@@ -637,10 +663,14 @@ color: #1B7B98;
 **************************/
 #map {
   position: relative;
+  z-index: 30;
 }
 
 #gmap {
   height:450px;
+  position: relative;
+  z-index: 30;
+
 }
 
 
@@ -649,41 +679,56 @@ color: #1B7B98;
 **************************/
 
 .contact-section {
-  background-color: #f7ab24;
-  background-image: url("../images/contact-bg.jpg");
+  background-color: #000000;
   background-position:60% 0;
   background-size:contain;
   background-repeat:no-repeat;
   position: relative;
 }
 
-.ear-piece {
-  position: absolute;
-  left: 0;
-  top: 0;
+#contact .btn-primary {
+  position: relative;
+  z-index: 20;
 }
-
 #contact .container {
   padding-top:47px;
+  background: #000000;
 }
 
 #contact h3 {
   text-transform:inherit;
-  color: #373737;
+  color: #ffffff;
+  position: relative;
+  z-index: 30;
 }
 
 #contact-section h3 {
+  position: relative;
+z-index: 30;
   margin-bottom: 25px
+  color: #ffffff;
+
+}
+.contact-section h1 {
+  position: relative;
+z-index: 30;
+  color: #ffffff;
+
 }
 
 #contact address {
   font-size: 18px;
-  color: #373737;
+  color: #ffffff;
+  position: relative;
+  z-index: 30;
 }
 
 .contact-text {
   margin-bottom: 35px;
   display: block;
+  color: #ffffff;
+  position: relative;
+  z-index: 30;
 }
 
 
@@ -694,6 +739,7 @@ color: #1B7B98;
   border-radius: 0;
   color: #797979;
   font-size: 18px;
+
 }
 
 #contact-section .form-control:focus {
@@ -717,11 +763,15 @@ color: #1B7B98;
   padding: 6px 42px;
   margin-bottom: 110px;
   margin-top: 10px
+  position: relative;
+  z-index: 30;
 }
 
 #contact-section .btn-primary:hover {
   background-color: #212020;
   color: #fff
+  position: relative;
+  z-index: 30;
 }
 
 
@@ -731,14 +781,18 @@ color: #1B7B98;
 **************************/
 
 #footer {
-  background-color: #212121;
-  background-image: url("../images/footer-bg.jpg");
+  background-color: #000000;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFFFFF;
   font-size: 20px;
   padding: 35px 0;
+}
+
+#footer img {
+  position: relative;
+  z-index: 30;
 }
 
 #footer a {

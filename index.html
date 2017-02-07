@@ -39,6 +39,7 @@
         #home {
             position: relative;
         }
+
         #explore {
             position: relative;
         }
@@ -51,7 +52,18 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50% 50%;
-            z-index: 5;
+            z-index: 3;
+        }
+
+        #stars-js {
+            position: absolute;
+            width: 100%;
+            height: 450%;
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            z-index: 3;
         }
 
         #logoslac {
@@ -59,6 +71,10 @@
             -webkit-transition: all 0.5s;
             -moz-transition: all 0.5s;
             transition: all 0.5s;
+        }
+
+        body {
+            background-color: #000000;
         }
     </style>
 
@@ -72,8 +88,8 @@
 
 
 
-  <div id="particles-js"> </div>
-
+    <div id="particles-js"> </div>
+    <div id="stars-js"> </div>
     <header id="header" role="banner">
         <div class="main-nav">
             <div class="container">
@@ -95,10 +111,12 @@
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="scroll active"><a href="#home">Home</a></li>
-                            <li class="scroll"><a href="#event">Event</a></li>
                             <li class="scroll"><a href="#about">About</a></li>
-                            <li><a class="no-scroll" href="#" target="_blank">Register</a></li>
-                            <li class="scroll"><a href="#contact">Contact</a></li>
+                            <li class="scroll"><a href="#event">Event</a></li>
+                            <!-- <li class="scroll"><a href="#sponsor">Sponsors</a></li> -->
+
+                            <li class="scroll"><a href="#Register">Register</a></li>
+                            <li class="scroll"><a href="#cons">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -121,19 +139,22 @@
                         <div class="glowlogo">
                             <p>
                                 <a id="logoslac">
-                              SLAC
-                              <div   style="font-size: 3em;   margin-top: -50px;
-                                  margin-left: 400px;">
-                                2017
-                              </div>
-                            </a>
+                            SLAC
+                            <div   style="font-size: 3em;   margin-top: -50px;
+                                margin-left: 400px;">
+                              2017
+                            </div>
+                            <div   style="font-size: 1.5em; margin-top: -70px;margin-left: 80px;">
+                              1st - 2nd April
+                            </div>
+                          </a>
                             </p>
                         </div>
 
                     </div>
                     <div class="carousel-caption">
                         <h2>Stay Late and Code </h2>
-                        <h4>FACE Club</h4>
+                        <h4>Amrita School of Engineering, Bengaluru</h4>
                         <a href="https://www.facebook.com/StayLateAndCodeFest/">Facebook <i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
@@ -145,7 +166,7 @@
     <!--/#home-->
 
     <section id="explore">
-      <div id="particles-js"> </div>
+        <div id="particles-js"> </div>
 
         <div class="container">
             <div class="row">
@@ -156,20 +177,20 @@
                 <div class="col-sm-7 col-md-6">
                     <ul id="countdown">
                         <li>
-                            <span class="days time-font">00</span>
-                            <p>days </p>
+                            <span class="days time-font hvr-bob">00</span>
+                            <p class="hvr-bob">days </p>
                         </li>
                         <li>
-                            <span class="hours time-font">00</span>
-                            <p class="">hours </p>
+                            <span class="hours time-font hvr-bob">00</span>
+                            <p class="hvr-bob">hours </p>
                         </li>
                         <li>
-                            <span class="minutes time-font">00</span>
-                            <p class="">minutes</p>
+                            <span class="minutes time-font hvr-bob">00</span>
+                            <p class="hvr-bob ">minutes</p>
                         </li>
                         <li>
-                            <span class="seconds time-font">00</span>
-                            <p class="">seconds</p>
+                            <span class="seconds time-font hvr-bob">00</span>
+                            <p class="hvr-bob">seconds</p>
                         </li>
                     </ul>
                 </div>
@@ -179,130 +200,31 @@
 
         </div>
     </section>
+
+
+
+
+
     <!--/#explore-->
     <section id="about">
         <div class="guitar2">
-            <img style="z-index:20;"class="img-responsive" src="images/guitar2.jpg" alt="guitar">
+            <img style="z-index:20;" class="img-responsive hvr-bob" src="images/guitar2.jpg" alt="guitar">
         </div>
         <div class="about-content">
             <h2>It's ON! So <i>#HackON!</i></h2>
-            <p>FACE, the Forum for Aspiring Computer Engineers proudly presents to you the one and only 24 hour Hackathon
-              of Amrita School of Engineering - SLAC 2016! Stay Late And Code(SLAC) brings together developers, designers and coders
-               to create, innovate
-                and put them into action. <br><br> Be it a unique application that lets you play 3D tic-tac-toe,
-                or even the next big social network, the hackers build the most fantastic products overnight, anything from
-                useful-to-hilarious products.
+            <p>FACE, the Forum for Aspiring Computer Engineers proudly presents to you the one and only 24 hour Hackathon of Amrita School of Engineering - SLAC 2017! Stay Late And Code(SLAC) brings together developers, designers and coders to create, innovate
+                and put them into action. <br><br> Be it a unique application that lets you play 3D tic-tac-toe, or even the next big social network, the hackers build the most fantastic products overnight, anything from useful-to-hilarious products.
                 Join us for this carnival of ideas and walk away with your mind blown!</p>
-            <a href="#" class="btn btn-primary hvr-grow">View Date & placeholder <i class="fa fa-angle-right"></i></a>
 
         </div>
     </section>
     <!--/#about-->
 
 
-    <section id="event">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-9">
-                    <div id="event-carousel" class="carousel slide" data-interval="false">
-                        <h2 class="heading">THE ROCKING Performers</h2>
-                        <a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-                        <a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="single-event">
-                                            <img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
-                                            <h4>Chester Bennington</h4>
-                                            <h5>Vocal</h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="single-event">
-                                            <img class="img-responsive" src="images/event/event2.jpg" alt="event-image">
-                                            <h4>Mike Shinoda</h4>
-                                            <h5>vocals, rhythm guitar</h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="single-event">
-                                            <img class="img-responsive" src="images/event/event3.jpg" alt="event-image">
-                                            <h4>Rob Bourdon</h4>
-                                            <h5>drums</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="single-event">
-                                            <img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
-                                            <h4>Chester Bennington</h4>
-                                            <h5>Vocal</h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="single-event">
-                                            <img class="img-responsive" src="images/event/event2.jpg" alt="event-image">
-                                            <h4>Mike Shinoda</h4>
-                                            <h5>vocals, rhythm guitar</h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="single-event">
-                                            <img class="img-responsive" src="images/event/event3.jpg" alt="event-image">
-                                            <h4>Rob Bourdon</h4>
-                                            <h5>drums</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="guitar">
-                    <img class="img-responsive" src="images/guitar.png" alt="guitar">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--/#event-->
 
 
 
-    <section id="twitter">
-        <div id="twitter-feed" class="carousel slide" data-interval="false">
-            <div class="twit">
-                <img class="img-responsive" src="images/twit.png" alt="twit">
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-                    <div class="text-center carousel-inner center-block">
-                        <div class="item active">
-                            <img src="images/twitter/twitter1.png" alt="">
-                            <p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-                            <a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
-                        </div>
-                        <div class="item">
-                            <img src="images/twitter/twitter2.png" alt="">
-                            <p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-                            <a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
-                        </div>
-                        <div class="item">
-                            <img src="images/twitter/twitter3.png" alt="">
-                            <p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-                            <a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
-                        </div>
-                    </div>
-                    <a class="twitter-control-left" href="#twitter-feed" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-                    <a class="twitter-control-right" href="#twitter-feed" data-slide="next"><i class="fa fa-angle-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--/#twitter-feed-->
+
 
     <section id="sponsor">
         <div id="sponsor-carousel" class="carousel slide" data-interval="false">
@@ -310,53 +232,29 @@
                 <div class="row">
                     <div class="col-sm-10">
                         <h2>Sponsors</h2>
-                        <a class="sponsor-control-left" href="#sponsor-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-                        <a class="sponsor-control-right" href="#sponsor-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <ul>
-                                    <li>
-                                        <a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="item">
-                                <ul>
-                                    <li>
-                                        <a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a>
-                                    </li>
-                                </ul>
-                            </div>
+
+
+                        <div class="item">
+                            <ul>
+                                <li>
+                                    <a href="#"><img class="img-responsive" src="images/place.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="img-responsive" src="images/place.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="img-responsive" src="images/place.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="img-responsive" src="images/place.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="img-responsive" src="images/place.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="img-responsive" src="images/place.png" alt=""></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -369,71 +267,104 @@
     <!--/#sponsor-->
 
     <section id="contact">
-        <div id="map">
-            <div id="gmap-wrap">
-                <div id="gmap">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 ">
+                    <h3>MAP</h3>
+
+                    <div id="map">
+                        <div id="gmap-wrap">
+                            <div id="gmap">
+                            </div>
+                        </div>
+                    </div>
+                    <!--/#map-->
+                </div>
+                <div class="col-sm-2">
+                    <br>
+                    <br>
+                    <br>
+
+                    <a href="https://www.google.co.in/maps/dir//Amrita+School+of+Engineering,+Amrita+Vishwa+Vidyapeetham+University+Campus,+Kasavanahalli,+Carmelaram,+Junnasandra,+Choodasandra,+Bengaluru,+Karnataka+560035/@12.8944838,77.6744699,17.65z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae13479f912c41:0x5919577ad754c73e!2m2!1d77.675153!2d12.894655"
+                        class="btn btn-primary hvr-grow">Get Directions <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
-        <!--/#map-->
 
 
 
-        <div class="contact-section">
-            <div class="ear-piece">
-                <img class="img-responsive" src="images/ear-piece.png" alt="">
-            </div>
+        <div id="cons" class="contact-section">
+            <div class="ear-piece"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-3 col-sm-offset-4">
+                    <div class="col-sm-4 ">
                         <div class="contact-text">
-                            <h3>Contact</h3>
+                            <h3 >Contact</h3>
                             <address>
-  								E-mail: slacfest2k17@gmail.com<br>
-  								Phone: +91 422 2685000<br>
-  								+91 422 2685000
-  							</address>
+                								E-mail: <a href="mailto:slacfest2017@gmail.com?Subject=SLAC%20PQuery">slacfest2017@gmail.com</a><br><br>
+                								Phone: +91 422 2685000, +91 422 2685000
+  							          </address>
                         </div>
                         <div class="contact-address">
-                            <h3>Contact</h3>
+                            <h3>Organizers</h3>
                             <address>
-                  Sanket: 9945344862
-                  Akhilesh: 9742203576
-                </address>
+                                Sanket M Bhat &nbsp;&nbsp; +91 9945344862 <br><br>
+                                Akhilesh Anand &nbsp;&nbsp; +91 9742203576
+                              </address>
                         </div>
-
+                    </div>
+                    <div class="col-sm-4 ">
                         <div class=" col-sm-9 col-sm-offset-5 social-icons">
-                            <br>
-                            <br>
+                            <h1>Social Media</h1>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-youtube"></i></a>
                         </div>
+                        <div class="">
+
+                        </div>
                     </div>
                 </div>
-
-
             </div>
-
-
         </div>
-
         </div>
     </section>
     <!--/#contact-->
-
     <footer id="footer">
         <div class="container">
-            <div class="text-center">
-                <p> Copyright &copy;2014<a target="_blank" href="http://shapebootstrap.net/"> Evento </a>Theme. All Rights Reserved. <br> Designed by <a target="_blank" href="http://shapebootstrap.net/">ShapeBootstrap</a></p>
+          <div class="row">
+            <br><br>
+              <h2>Brought to you by</h2>
+            <br><br>
+            <div class="col-sm-4">
+              <a href="https://www.amrita.edu/campus/bengaluru" target="_blank">  <img style="height:100px;width:auto;"   class="img-responsive" src="images/aseb_logo.png" alt=""></a>
             </div>
+            <div class="col-sm-3">
+              <a href="https://www.facebook.com/face00amrita/" target="_blank" >  <img style="height:100px;width:auto;" class="img-responsive" src="images/face.png" alt=""></a>
+
+            </div>
+            <div class="col-sm-3">
+              <a href="http://www.amma.org" target="_blank">      <img style="height:100px;width:auto;"  class="img-responsive" src="images/amma-logo.png" alt=""></a>
+
+            </div>
+          </div>
+            <div class="row">
+                <div class="text-center">
+                  <br><br><br><br>
+                    <p> Copyright &copy;2017<a target="_blank" href="http://amrita.edu"> Amrita School of Engineering, Bengaluru</a> All Rights Reserved. <br> Designed with <i style="color:red;" class="fa fa-heart fa-2" aria-hidden="true"></i> by the <a target="_blank"
+                            href="https://www.facebook.com/face00amrita/">FACE Team</a></p>
+
+                </div>
+            </div>
+
+
         </div>
     </footer>
     <!--/#footer-->
 
     <script type="text/javascript" src="js/particles.min.js"></script>
     <script type="text/javascript" src="js/particle.js"></script>
-
+    <script type="text/javascript" src="js/star.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
