@@ -10,8 +10,33 @@ jQuery(function($) {'use strict',
 			// callback function
 		});
 
+		$(document).ready(function() {
 
+			setTimeout(function(){
+				$('body').addClass('loaded');
+				$('h1').css('color','#222222');
+			}, 1000);
 
+		});
+// 		var randomLoadingMessage = function() {
+//     var lines = new Array(
+//         "Locating the required gigapixels to render...",
+//         "Spinning up the hamster...",
+//         "Shovelling coal into the server...",
+//         "Programming the flux capacitor"
+//     );
+//     return lines[Math.round(Math.random()*(lines.length-1))];
+// }
+
+$(".ty").html(function() {
+    var lines = new Array(
+			"Locating the required gigapixels...",
+        "&nbsp;&nbsp;&nbsp;&nbsp;Spinning up the hamster...",
+        "&nbsp;Shovelling coal into the server...",
+        "&nbsp;Programming the flux capacitor"
+    );
+    return lines[Math.round(Math.random()*(lines.length-1))];
+});
 	//Scroll Menu
 
 	function menuToggle()
